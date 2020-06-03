@@ -8,7 +8,7 @@
 	export default {
 		methods: {
 			logo() {
-				if (this.$route.path !== '/') {
+				if (this.$route.path !== '/' && this.$store.state.auth.profile) {
 					this.$router.push('/');
 				}
 			},
