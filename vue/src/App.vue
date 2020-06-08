@@ -63,7 +63,7 @@
 		mounted() {
 			return this.$http.get(this.$address + '/profile')
 				.then((data) => {
-					if (!data.data.profile && this.$route.path === '/') {
+					if (!data.data.profile) {
 						this.$router.push('/login');
 					}
 					if (data.data.profile) {

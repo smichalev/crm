@@ -11,6 +11,9 @@ module.exports = (app) => {
 	app.get('/login', (req, res, next) => {
 		res.render('index');
 	});
+	app.get('/productlist', (req, res, next) => {
+		res.render('index');
+	});
 	
 	app.get('/api/profile', (req, res, next) => {
 		return res.status(200).json({profile: !req.session.user ? null : req.session.user});

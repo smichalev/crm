@@ -1,3 +1,5 @@
 .idea
 .directory
 node_modules
+app/config/index.js
+vue/src

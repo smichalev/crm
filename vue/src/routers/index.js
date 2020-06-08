@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import indexRouter from './indexRouter';
 import loginRouter from './loginRouter';
+import productlistRouter from './productlistRouter';
 
 Vue.use(Router);
 
@@ -11,5 +12,6 @@ export default new Router({
 	routes: [
 		...indexRouter,
 		...loginRouter,
+		...productlistRouter
 	],
 });

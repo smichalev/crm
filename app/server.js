@@ -21,7 +21,7 @@ const config = require(path.join(__dirname, 'config'));
 const app = express();
 
 app.use(cors({
-	origin: ['http://' + config.host + ':' + config.port, 'http://localhost:' + config.port],
+	origin: ['http://' + config.host + ':' + config.port, 'http://localhost:' + config.port, 'http://192.168.88.253:8080'],
 	credentials: true,
 }));
 

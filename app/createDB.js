@@ -19,9 +19,14 @@ const md5 = require('md5');
 	try {
 		let users = [
 			{name: 'Иванов Иван Иванович', password: md5('123'), role: roles[6]},
+			{name: 'Сидоров Георгий Иванович', password: md5('123'), role: roles[0]},
+			{name: 'Гаврилов Сергей Петрович', password: md5('123'), role: roles[0]},
 			{name: 'Петров Петр Петрович', password: md5('123'), role: roles[5]},
 			{name: 'Соня Мармеладова', password: md5('123'), role: roles[1]},
 			{name: 'Анна Каренина', password: md5('123'), role: roles[1]},
+			{name: 'Вася Пупкин', password: md5('123'), role: roles[3]},
+			{name: 'Сергей Васильев', password: md5('123'), role: roles[2]},
+			{name: 'Екатерина Петренко', password: md5('123'), role: roles[4]},
 		];
 		
 		for (let i = 0; i < users.length; i++) {
